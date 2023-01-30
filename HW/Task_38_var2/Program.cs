@@ -23,8 +23,7 @@ PrintArray(array);
 int max = 0;
 int min = 0;
 
-void Searching(int max, int min)
-{
+
     min = array[0];
     max = array[0];
     for (int i = 0; i < len; i++)
@@ -32,8 +31,7 @@ void Searching(int max, int min)
         if (array[i] < min) min = array[i];
         if (array[i] > max) max = array[i];
     }
-}
-Searching(max, min);
+
 int result = max - min;
 Console.WriteLine($"Разница между максимальным значением  {max} и минимальным значением {min} равна {result} ");
 
